@@ -2,10 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 
 //import do echart
-import 'echarts';
-import Echarts from 'vue-echarts';
+// import 'echarts';
+// import Echarts from 'vue-echarts';
 
-Vue.component('chart', Echarts);
+// Vue.component('chart', Echarts);
 
 Vue.config.productionTip = false
 
