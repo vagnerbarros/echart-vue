@@ -11,13 +11,17 @@ export default {
   data: () => ({
     
     options: {
-      color: ['#003366', '#006699', '#4cabce', '#e5323e'],
       tooltip: {},
       grid: {
         left: '3%',
         right: '4%',
         bottom: '3%',
-        containLabel: true
+        containLabel: true,
+        tooltip: {
+          formatter: (params) => {
+            return params.value.toLocaleString('pt-BR', { style: 'decimal', minimumFractionDigits: 2, useGrouping: false});
+          }
+        }
       },
       xAxis: {
         type: 'category',
@@ -31,7 +35,9 @@ export default {
           normal: {
             show: true,
             rotate: 90,
-            formatter: '{c}',
+            formatter: (params) => {
+              return params.value.toLocaleString('pt-BR', { style: 'decimal', minimumFractionDigits: 2, useGrouping: false});
+            },
             fontSize: 12,
             rich: {
                 name: {
