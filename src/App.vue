@@ -1,7 +1,7 @@
 <template>
   <div>
     <bar-chart style="margin-bottom: 50px; float: left"></bar-chart>
-    <pie-chart style="margin-bottom: 50px; float: left"></pie-chart>
+    <pie-chart style="margin-bottom: 50px; float: left">2123</pie-chart>
   </div>
 </template>
 
